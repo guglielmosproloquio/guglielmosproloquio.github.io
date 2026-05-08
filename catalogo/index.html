@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fein — Catalogo Gioielli Artigianali</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar navbar--solid" id="navbar">
+
+    <a href="/index.html" class="navbar__logo">
+      <span class="navbar__logo-script">Fein</span>
+      <span class="navbar__logo-subtitle">Officine orafe</span>
+    </a>
+
+    <ul class="navbar__links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/catalogo/index.html">Prodotti</a></li>
+      <li><a href="/laboratorio/index.html">Il laboratorio</a></li>
+      <li><a href="/su commissione/index.html">Su commissione</a></li>
+    </ul>
+
+    <a href="/contatti/index.html" class="btn-gold navbar__cta">Contattaci</a>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile-menu" id="mobileMenu">
+    <a href="/index.html">Home</a>
+    <a href="/catalogo/index.html">Prodotti</a>
+    <a href="/laboratorio/index.html">Il laboratorio</a>
+    <a href="/su commissione/index.html">Su commissione</a>
+    <a href="/contatti/index.html" class="btn-gold" style="text-align:center; margin-top:.5rem;">Contattaci</a>
+  </div>
+
+
+
+  <!-- ═══════════════════════════════════════
+       HEADER PAGINA
+  ═══════════════════════════════════════ -->
+  <header class="catalog-header" id="home">
+    <div class="catalog-header__bg">
+      <div class="catalog-header__inner">
+        <div class="catalog-header__text">
+          <span class="catalog-header__eyebrow">Gioielli artigianali · Torino</span>
+          <h1 class="catalog-header__title">I nostri gioielli</h1>
+          <p class="catalog-header__lead">
+            Una selezione dei pezzi realizzati nel nostro laboratorio.
+            Ogni gioiello è unico: se non trovi quello che cerchi,
+            <a href="/su commissione/index.html">lo creiamo insieme</a>.
+          </p>
+        </div>
+        <div class="catalog-header__count">
+          <span class="catalog-header__count-number" id="visibleCount">24</span>
+          <span class="catalog-header__count-label">gioielli<br>selezionati</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       CATALOGO
+  ═══════════════════════════════════════ -->
+  <main class="catalog" id="prodotti">
+    <div class="catalog__inner">
+
+      <!-- Filtri -->
+      <div class="filter-bar" role="tablist" aria-label="Filtra per categoria">
+        <button class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">
+          Tutti
+        </button>
+        <button class="filter-btn" data-filter="anelli" role="tab" aria-selected="false">
+          Anelli
+        </button>
+        <button class="filter-btn" data-filter="braccialetti" role="tab" aria-selected="false">
+          Braccialetti
+        </button>
+        <button class="filter-btn" data-filter="ciondoli" role="tab" aria-selected="false">
+          Ciondoli
+        </button>
+        <button class="filter-btn" data-filter="collane" role="tab" aria-selected="false">
+          Collane
+        </button>
+        <button class="filter-btn" data-filter="fedi" role="tab" aria-selected="false">
+          Fedi
+        </button>
+        <button class="filter-btn" data-filter="orecchini" role="tab" aria-selected="false">
+          Orecchini
+        </button>
+      </div>
+
+      <!-- Griglia prodotti -->
+      <!-- 
+        ISTRUZIONI PER AGGIUNGERE PRODOTTI:
+        Ogni card ha:
+        - data-category="[categoria]" → usato dal filtro JS
+        - style="background-image: url('images/[nomefile].jpg')" sul div .product-card__img
+        - .product-card__name → nome del pezzo
+        
+        Duplica un blocco .product-card per aggiungere nuovi prodotti.
+      -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- ── ANELLI (8 card di esempio) ── -->
+
+        <article class="product-card reveal" data-category="anelli" style="background-image: url('/img/pexels-iriser-1090994.jpg');">
+          <div class="product-card__img" style="background-image: url('/img/Gigia-1024x683-removebg-preview.png');"></div>
+          
+          <div class="product-card__info">
+            <h2 class="product-card__name">Gigia</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="/catalogo/prodotti/Gigia/index.html" class="product-card__link" aria-label="Scopri Gigia"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli" style="background-image: url(/img/pexels-raulling-34741088.jpg);">
+          <div class="product-card__img" style="background-image: url(/img/Asia-1024x683-removebg-preview.png);"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name">Asia</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link" aria-label="Scopri Asia"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli" style="background-image: url(/img/pexels-kylevermeulen-34710867.jpg);">
+          <div class="product-card__img" style="background-image: url(/img/Daniela-1024x682-removebg-preview.png);"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name">Daniela</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link" aria-label="Scopri Daniela"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli" style="background-image: url(/img/pexels-kendal-4796416.jpg);">
+          <div class="product-card__img" style="background-image: url(/img/Floriana-removebg-preview.png);"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name">Floriana</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome anello --></h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome anello --></h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome anello --></h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="anelli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome anello --></h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <!-- ── BRACCIALETTI ── -->
+
+        <article class="product-card reveal" data-category="braccialetti">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome braccialetto --></h2>
+            <span class="product-card__cat">Braccialetto</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="braccialetti">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome braccialetto --></h2>
+            <span class="product-card__cat">Braccialetto</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="braccialetti">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome braccialetto --></h2>
+            <span class="product-card__cat">Braccialetto</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <!-- ── CIONDOLI ── -->
+
+        <article class="product-card reveal" data-category="ciondoli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome ciondolo --></h2>
+            <span class="product-card__cat">Ciondolo</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="ciondoli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome ciondolo --></h2>
+            <span class="product-card__cat">Ciondolo</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="ciondoli">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome ciondolo --></h2>
+            <span class="product-card__cat">Ciondolo</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <!-- ── COLLANE ── -->
+
+        <article class="product-card reveal" data-category="collane">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome collana --></h2>
+            <span class="product-card__cat">Collana</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="collane">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome collana --></h2>
+            <span class="product-card__cat">Collana</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="collane">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome collana --></h2>
+            <span class="product-card__cat">Collana</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <!-- ── FEDI ── -->
+
+        <article class="product-card reveal" data-category="fedi">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome fede --></h2>
+            <span class="product-card__cat">Fede</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="fedi">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome fede --></h2>
+            <span class="product-card__cat">Fede</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="fedi">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome fede --></h2>
+            <span class="product-card__cat">Fede</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <!-- ── ORECCHINI ── -->
+
+        <article class="product-card reveal" data-category="orecchini">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome orecchini --></h2>
+            <span class="product-card__cat">Orecchini</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="orecchini">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome orecchini --></h2>
+            <span class="product-card__cat">Orecchini</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+        <article class="product-card reveal" data-category="orecchini">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome orecchini --></h2>
+            <span class="product-card__cat">Orecchini</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+      </div>
+      <!-- /products-grid -->
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       IN NEGOZIO TROVI ALTRI ANELLI
+  ═══════════════════════════════════════ -->
+  <section class="why" id="about">
+
+    <div class="why__inner">
+
+      <div class="why__header reveal">
+        <span class="why__eyebrow">Fein | Torino</span>
+        <h2 class="why__title">Il nostro negozio</h2>
+      </div>
+
+      <div class="why__grid">
+
+        <!-- Card 1 -->
+        <div class="why-card reveal">
+          <span class="why-card__number" aria-hidden="true">01</span>
+          <div class="why-card__icon why-card__icon--design" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Una collezione speciale</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Ogni gioiello nasce da un progetto originale. Non replichiamo,
+            non serializziamo: ogni pezzo ha una forma che esiste solo
+            una volta nel mondo.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card reveal" style="transition-delay: 0.14s;">
+          <span class="why-card__number" aria-hidden="true">02</span>
+          <div class="why-card__icon why-card__icon--hand" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Fatto a mano</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Lavoriamo ogni pezzo nel nostro laboratorio di Torino,
+            con tecniche orafe tradizionali e la cura artigianale
+            che solo le mani sanno dare.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card reveal" style="transition-delay: 0.28s;">
+          <span class="why-card__number" aria-hidden="true">03</span>
+          <div class="why-card__icon why-card__icon--custom" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Su commissione</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Hai un'idea, un'emozione da trasformare in gioiello?
+            Ci sediamo insieme, ascoltiamo, progettiamo.
+            Il risultato sarà davvero tuo.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA COMMISSIONE
+  ═══════════════════════════════════════ -->
+  <section class="catalog-cta" id="commissione">
+    <div class="catalog-cta__inner reveal">
+      <span class="catalog-cta__eyebrow">Non hai trovato quello che cercavi?</span>
+      <h2 class="catalog-cta__title">
+        Il tuo gioiello ideale<br>
+        <em>lo facciamo su misura</em>
+      </h2>
+      <p class="catalog-cta__lead">
+        Vieni in laboratorio, raccontaci la tua idea
+        e la trasformiamo in qualcosa di unico.
+      </p>
+      <a href="/laboratorio/index.html" class="btn-gold">Scopri come funziona</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       VIENI A TROVARCI
+  ═══════════════════════════════════════ -->
+  <section class="visit" id="vieni">
+
+    <div class="visit__header reveal">
+      <span class="visit__eyebrow">Torino · Su appuntamento</span>
+      <h2 class="visit__title">Vieni a trovarci</h2>
+    </div>
+
+    <div class="visit__body">
+
+      <div class="visit__info">
+
+        <div class="reveal">
+          <div class="visit__block-label">Dove siamo</div>
+          <p class="visit__address">
+            Via Luigi Cibrario 26<br>
+            10144 Torino, TO
+            <br>
+            <a href="https://maps.app.goo.gl/memcEbEAM18f2AXj6" target="_blank" rel="noopener">
+              ↗ Apri in Google Maps
+            </a>
+          </p>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Orari</div>
+          <div class="visit__hours-table">
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Martedì – Venerdì</span>
+              <span class="visit__hours-time">09:00 – 12:30 | 15:00 - 19:30</span>
+            </div>
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Sabato</span>
+              <span class="visit__hours-time">09:30 – 12:30 | 15:30 - 19:00</span>
+            </div>
+            <div class="visit__hours-row visit__hours-row--closed">
+              <span class="visit__hours-day">Domenica e Lunedì</span>
+              <span class="visit__hours-time">Chiuso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Nota</div>
+          <p class="visit__address" style="font-size: clamp(0.88rem, 1.4vw, 1rem); color: var(--gray-mid);">
+            Per le consulenze personalizzate ti consigliamo di fissare un appuntamento
+            contattandoci in anticipo.
+          </p>
+        </div>
+
+      </div>
+
+      <!--
+        ISTRUZIONI MAPPA: vai su Google Maps → cerca il tuo indirizzo →
+        Condividi → Incorpora mappa → copia il valore src e sostituiscilo qui sotto.
+      -->
+      <div class="visit__map-wrap reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3518813233627!2d7.661798676082745!3d45.078657071070225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d9c8ca62af7%3A0xc6b7d1a80fcb262d!2sFein%20le%20Officine%20Orafe!5e0!3m2!1sit!2sit!4v1774539630311!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="contatti">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="footer__logo-script">Fein</span>
+          <span class="footer__logo-subtitle">Officine orafe</span>
+        </a>
+        <div class="footer__brand-rule"></div>
+        <p class="footer__tagline">
+          Gioielli artigianali unici,<br>
+          forgiati a mano a Torino.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/fein.leofficineorafe/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><img src="/img/icons/icons8-instagram-50.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=100057106854939" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener"><img src="/img/icons/icons8-facebook-50.png"></a>
+          <a href="https://www.tiktok.com/@francescofein65" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener"><img src="/img/icons/icons8-tiktok-50.png"></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Navigazione</p>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#prodotti">I nostri gioielli</a></li>
+          <li><a href="#about">Laboratori Fein</a></li>
+          <li><a href="#commissione">Su commissione</a></li>
+          <li><a href="#vieni">Vieni a trovarci</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Contatti</p>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Indirizzo</span>
+          <span class="footer__contact-value">
+            Via Luigi Cibrario, 26<br>
+            10144 Torino, TO
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Telefono</span>
+          <a href="tel:+390114375276" class="footer__contact-value">011 437 5276 </a>
+          <a href="tel:+393755141969" class="footer__contact-value">375 514 1969 </a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:feinleofficineorafe@gmail.com" class="footer__contact-value">feinleofficineorafe@gmail.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Orari</span>
+          <span class="footer__contact-value">
+            Mar – Ven: 09:00 – 12:30 | 15:00 – 19:30<br>
+            Sab: 9:30 – 12:30 | 15:30 – 19:00 <br>
+            Dom – Lun: Chiuso
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        © <span id="year"></span> Fein Officine Orafe · Torino · P.IVA 11156180017
+      </span>
+      <nav class="footer__legal">
+        <a href="https://icons8.it/">Icone realizzate da Icons8</a>
+      </nav>
+    </div>
+
+  </footer>
+
+  <!-- Script -->
+  <script src="/script.js"></script>
+</body>
+</html>

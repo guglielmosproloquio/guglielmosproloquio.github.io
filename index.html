@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fein — Officine Orafe · Gioielli Artigianali a Torino</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+
+    <a href="/index.html" class="navbar__logo">
+      <span class="navbar__logo-script">Fein</span>
+      <span class="navbar__logo-subtitle">Officine orafe</span>
+    </a>
+
+    <ul class="navbar__links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/catalogo/index.html">Prodotti</a></li>
+      <li><a href="/laboratorio/index.html">Il laboratorio</a></li>
+      <li><a href="/su commissione/index.html">Su commissione</a></li>
+    </ul>
+
+    <a href="/contatti/index.html" class="btn-gold navbar__cta">Contattaci</a>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile-menu" id="mobileMenu">
+    <a href="/index.html">Home</a>
+    <a href="/catalogo/index.html">Prodotti</a>
+    <a href="/laboratorio/index.html">Il laboratorio</a>
+    <a href="/su commissione/index.html">Su commissione</a>
+    <a href="/contatti/index.html" class="btn-gold" style="text-align:center; margin-top:.5rem;">Contattaci</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+
+    <div class="hero__bg"></div>
+
+    <!-- Overlay scuro + grain -->
+    <div class="hero__overlay"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+
+      <!-- Colonna testo -->
+      <div class="hero__content">
+        <span class="hero__eyebrow">Torino · Fatto a mano</span>
+
+        <h1 class="hero__title">
+          Gioielli 
+          <em>unici</em>
+          come te
+        </h1>
+
+        <p class="hero__lead">
+          Ogni pezzo che creiamo nasce da un'idea, da un momento,
+          da qualcosa che merita di essere ricordato per sempre.
+        </p>
+
+        <div class="hero__actions">
+          <a href="/catalogo/index.html" class="btn-gold">Scopri i prodotti</a>
+          <a href="/su commissione/index.html" class="btn-outline">Crea il tuo gioiello</a>
+        </div>
+      </div>
+
+      <!-- Decorazione geometrica laterale -->
+      <div class="hero__deco" aria-hidden="true">
+        <div class="hero__deco-ring hero__deco-ring--lg"></div>
+        <div class="hero__deco-ring hero__deco-ring--sm"></div>
+        <div class="hero__deco-line"></div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">scorri</span>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PERCHÉ FEIN
+  ═══════════════════════════════════════ -->
+  <section class="why" id="perche">
+
+    <div class="why__inner">
+
+      <div class="why__header reveal">
+        <span class="why__eyebrow">Il nostro approccio</span>
+        <h2 class="why__title">Perché scegliere Fein</h2>
+      </div>
+
+      <div class="why__grid">
+
+        <!-- Card 1 -->
+        <div class="why-card reveal">
+          <span class="why-card__number" aria-hidden="true">01</span>
+          <div class="why-card__icon why-card__icon--design" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Design unico</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Ogni gioiello nasce da un progetto originale. Non replichiamo,
+            non serializziamo: ogni pezzo ha una forma che esiste solo
+            una volta.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card reveal" style="transition-delay: 0.14s;">
+          <span class="why-card__number" aria-hidden="true">02</span>
+          <div class="why-card__icon why-card__icon--hand" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Fatto a mano</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Lavoriamo ogni pezzo nel nostro laboratorio di Torino,
+            con tecniche orafe tradizionali e la cura artigianale
+            che solo le mani sanno dare.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card reveal" style="transition-delay: 0.28s;">
+          <span class="why-card__number" aria-hidden="true">03</span>
+          <div class="why-card__icon why-card__icon--custom" aria-hidden="true"></div>
+          <div>
+            <h3 class="why-card__title">Su commissione</h3>
+            <div class="why-card__rule"></div>
+          </div>
+          <p class="why-card__body">
+            Hai un'idea, un'emozione da trasformare in gioiello?
+            Ci sediamo insieme, ascoltiamo, progettiamo.
+            Il risultato sarà davvero tuo.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       I NOSTRI PRODOTTI
+  ═══════════════════════════════════════ -->
+  <section class="products" id="prodotti">
+    <div class="products__inner">
+
+      <div class="products__header reveal">
+        <div class="products__header-text">
+          <span class="products__eyebrow">Gioielli artigianali</span>
+          <h2 class="products__title">I nostri prodotti</h2>
+        </div>
+        <a href="catalogo/index.html" class="products__header-link">Vedi tutti i prodotti</a>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Anelli -->
+        <!-- background-image: url('images/cat-anelli.jpg') -->
+        <a href="/catalogo/index.html?categoria=anelli" class="cat-card reveal" style="background-image: url(/img/pexels-raulling-34741088.jpg);" loading="lazy">
+          <div class="cat-card__img" style="background-image: url(/img/Asia-1024x683-removebg-preview.png)"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Anelli</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Braccialetti -->
+        <!-- background-image: url('images/cat-braccialetti.jpg') -->
+        <a href="/catalogo/index.html?categoria=braccialetti" class="cat-card reveal">
+          <div class="cat-card__img"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Braccialetti</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Ciondoli -->
+        <!-- background-image: url('images/cat-ciondoli.jpg') -->
+        <a href="/catalogo/index.html?categoria=ciondoli" class="cat-card reveal">
+          <div class="cat-card__img"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Ciondoli</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Collane -->
+        <!-- background-image: url('images/cat-collane.jpg') -->
+        <a href="/catalogo/index.html?categoria=collane" class="cat-card reveal">
+          <div class="cat-card__img"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Collane</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Fedi -->
+        <!-- background-image: url('images/cat-fedi.jpg') -->
+        <a href="/catalogo/index.html?categoria=fedi" class="cat-card reveal">
+          <div class="cat-card__img"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Fedi</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Orecchini -->
+        <!-- background-image: url('images/cat-orecchini.jpg') -->
+        <a href="/catalogo/index.html?categoria=orecchini" class="cat-card reveal">
+          <div class="cat-card__img"></div>
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__label">
+            <span class="cat-card__name">Orecchini</span>
+            <span class="cat-card__arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       IL LABORATORIO
+  ═══════════════════════════════════════ -->
+  <section class="lab" id="laboratorio">
+
+
+
+    <!-- Testo a sinistra -->
+    <div class="lab__content">
+
+      <span class="lab__eyebrow reveal">Torino, dal <!-- inserisci anno --></span>
+
+      <h2 class="lab__title reveal">
+        Dal silenzio<br>
+        del laboratorio<br>
+        <em>nasce ogni pezzo</em>
+      </h2>
+
+      <p class="lab__body reveal">
+        I nostri gioielli non nascono da uno stampo. Nascono da una scelta:
+        quella di prendere tempo, di lavorare con le mani, di creare qualcosa di unico.
+      </p>
+
+      <p class="lab__body reveal">
+        Nel nostro laboratorio di Torino ogni pezzo è forgiato con tecniche
+        orafe tradizionali. Selezioniamo i materiali uno a uno, limiamo,
+        rifinuamo, ricominciamo. Fino a quando è giusto.
+      </p>
+
+      <!-- Dettagli tecnici — personalizza i valori -->
+      <div class="lab__details reveal">
+        <div class="lab__detail-item">
+          <span class="lab__detail-label">Sede</span>
+          <span class="lab__detail-value">Torino</span>
+        </div>
+        <div class="lab__detail-item">
+          <span class="lab__detail-label">Materiali</span>
+          <span class="lab__detail-value">Oro · Argento · Pietre</span>
+        </div>
+        <div class="lab__detail-item">
+          <span class="lab__detail-label">Lavorazione</span>
+          <span class="lab__detail-value">Artigianale</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <a href="laboratorio/index.html" class="btn-gold">Crea il tuo gioiello</a>
+      </div>
+
+    </div>
+
+    <!-- Immagine a destra -->
+    <!-- Per inserire la foto: aggiungi style="background-image: url('images/laboratorio.jpg');" -->
+    <div class="lab__visual reveal">
+
+      <!-- Badge sovrapposto: personalizza il numero -->
+      <div class="lab__badge">
+        <span class="lab__badge-number">100%</span>
+        <span class="lab__badge-label">Fatto a mano</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SU COMMISSIONE
+  ═══════════════════════════════════════ -->
+  <section class="commission" id="commissione">
+    <div class="commission__inner">
+
+      <!-- Colonna sinistra -->
+      <div class="commission__intro">
+
+        <span class="commission__eyebrow reveal">Su misura</span>
+
+        <h2 class="commission__title reveal">
+          Il gioiello<br>
+          che hai in mente<br>
+          <em>lo facciamo insieme</em>
+        </h2>
+
+        <p class="commission__lead reveal">
+          Non sei obbligato a scegliere da un catalogo.
+          Puoi raccontarci un'idea, un'emozione, un momento
+          e noi lo trasformiamo in qualcosa di unico da portare con te.
+        </p>
+
+        <div class="reveal">
+          <a href="/contatti/index.html" class="btn-gold">Inizia il tuo progetto</a>
+        </div>
+
+      </div>
+
+      <!-- Colonna destra: i tre passi -->
+      <div class="commission__steps">
+
+        <div class="step reveal">
+          <div class="step__number">
+            <span class="step__number-inner">1</span>
+          </div>
+          <div class="step__body">
+            <h3 class="step__title">Vieni in laboratorio</h3>
+            <p class="step__desc">
+              Ci incontriamo nel nostro spazio a Torino.
+              Parlaci di te, di chi vuoi omaggiare, dell'occasione.
+              Più ci racconti, meglio possiamo creare.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step__number">
+            <span class="step__number-inner">2</span>
+          </div>
+          <div class="step__body">
+            <h3 class="step__title">Disegniamo il pezzo insieme</h3>
+            <p class="step__desc">
+              Progettiamo il gioiello con te: forma, materiali, pietre.
+              Ogni scelta è condivisa, niente viene deciso senza di te.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <div class="step__number">
+            <span class="step__number-inner">3</span>
+          </div>
+          <div class="step__body">
+            <h3 class="step__title">Lo realizziamo a mano</h3>
+            <p class="step__desc">
+              Il nostro artigiano lavora al millimetro nel laboratorio.
+              Quando è pronto, è esattamente come lo avevate immaginato, o meglio.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- ═══════════════════════════════════════
+       VIENI A TROVARCI
+  ═══════════════════════════════════════ -->
+  <section class="visit" id="vieni">
+
+    <div class="visit__header reveal">
+      <span class="visit__eyebrow">Torino</span>
+      <h2 class="visit__title">Vieni a trovarci</h2>
+    </div>
+
+    <div class="visit__body">
+
+      <div class="visit__info">
+
+        <div class="reveal">
+          <div class="visit__block-label">Dove siamo</div>
+          <p class="visit__address">
+            Via Luigi Cibrario 26<br>
+            10144 Torino, TO
+            <br>
+            <a href="https://maps.app.goo.gl/memcEbEAM18f2AXj6" target="_blank" rel="noopener">
+              ↗ Apri in Google Maps
+            </a>
+          </p>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Orari</div>
+          <div class="visit__hours-table">
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Martedì – Venerdì</span>
+              <span class="visit__hours-time">09:00 – 12:30 | 15:00 - 19:30</span>
+            </div>
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Sabato</span>
+              <span class="visit__hours-time">09:30 – 12:30 | 15:30 - 19:00</span>
+            </div>
+            <div class="visit__hours-row visit__hours-row--closed">
+              <span class="visit__hours-day">Domenica e Lunedì</span>
+              <span class="visit__hours-time">Chiuso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Nota</div>
+          <p class="visit__address" style="font-size: clamp(0.88rem, 1.4vw, 1rem); color: var(--gray-mid);">
+            Per le consulenze personalizzate ti consigliamo di fissare un appuntamento
+            contattandoci in anticipo.
+          </p>
+        </div>
+
+      </div>
+
+      <!--
+        ISTRUZIONI MAPPA: Sostituisci con screenshot e link
+      -->
+      <div class="visit__map-wrap reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3518813233627!2d7.661798676082745!3d45.078657071070225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d9c8ca62af7%3A0xc6b7d1a80fcb262d!2sFein%20le%20Officine%20Orafe!5e0!3m2!1sit!2sit!4v1774539630311!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="contatti">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="footer__logo-script">Fein</span>
+          <span class="footer__logo-subtitle">Officine orafe</span>
+        </a>
+        <div class="footer__brand-rule"></div>
+        <p class="footer__tagline">
+          Gioielli artigianali unici,<br>
+          forgiati a mano a Torino.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/fein.leofficineorafe/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><img src="/img/icons/icons8-instagram-50.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=100057106854939" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener"><img src="/img/icons/icons8-facebook-50.png"></a>
+          <a href="https://www.tiktok.com/@francescofein65" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener"><img src="/img/icons/icons8-tiktok-50.png"></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Navigazione</p>
+        <ul class="footer__links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#prodotti">I nostri gioielli</a></li>
+          <li><a href="#commissione">Su commissione</a></li>
+          <li><a href="#laboratorio">Laboratori Fein</a></li>
+          <li><a href="#vieni">Vieni a trovarci</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Contatti</p>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Indirizzo</span>
+          <span class="footer__contact-value">
+            Via Luigi Cibrario, 26<br>
+            10144 Torino, TO
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Telefono</span>
+          <a href="tel:+390114375276" class="footer__contact-value">011 437 5276 </a>
+          <a href="tel:+393755141969" class="footer__contact-value">375 514 1969 </a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:feinleofficineorafe@gmail.com" class="footer__contact-value">feinleofficineorafe@gmail.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Orari</span>
+          <span class="footer__contact-value">
+            Mar – Ven: 09:00 – 12:30 | 15:00 – 19:30<br>
+            Sab: 9:30 – 12:30 | 15:30 – 19:00 <br>
+            Dom – Lun: Chiuso
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        © <span id="year"></span> Fein Officine Orafe · Torino · P.IVA 11156180017
+      </span>
+      <nav class="footer__legal">
+        <a href="https://icons8.it/">Icone realizzate da Icons8</a>
+      </nav>
+    </div>
+
+  </footer>
+
+
+  <!-- Script -->
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fein — Officine Orafe</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stili -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+
+    <a href="/index.html" class="navbar__logo">
+      <span class="navbar__logo-script">Fein</span>
+      <span class="navbar__logo-subtitle">Officine orafe</span>
+    </a>
+
+    <ul class="navbar__links">
+      <li><a href="#prodotti">Prodotti</a></li>
+      <li><a href="/index.html#laboratorio">Il laboratorio</a></li>
+      <li><a href="#commissione">Su commissione</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+    </ul>
+
+    <a href="#contatti" class="btn-gold navbar__cta">Contattaci</a>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile-menu" id="mobileMenu">
+    <a href="#prodotti">Prodotti</a>
+    <a href="/index.html#laboratorio">Il laboratorio</a>
+    <a href="#commissione">Su commissione</a>
+    <a href="#recensioni">Recensioni</a>
+    <a href="#contatti" class="btn-gold" style="text-align:center; margin-top:.5rem;">Contattaci</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <span class="hero__eyebrow">FEIN · Officine orafe</span>
+      <h1 class="hero__title">Anelli artigianali</h1>
+      <p class="hero__subtitle">
+        Realizzati nel nostro laboratorio a Torino<br>
+        Pensati per rendervi unici
+      </p>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       I NOSTRI ANELLI
+  ═══════════════════════════════════════ -->
+  <section class="products" id="prodotti">
+
+    <div class="products__header reveal">
+      <h2 class="products__title">I Nostri Anelli</h2>
+      <p class="products__subtitle">Gioielli unici realizzati dai nostri artigiani</p>
+    </div>
+
+    <div class="products__grid">
+      <!-- Card 1: decommentare background-image quando disponibile -->
+      <div class="ring-card reveal" style="background-image: url(/img/pexels-danieljschwarz-34702423.jpg);">
+        
+        <div class="ring-card__overlay" style="background-image: url(/img/Gigia-1024x683-removebg-preview.png);"></div>
+        
+        <div class="ring-card__label"><span class="ring-card__name">Gigia</span></div>
+        
+      </div>
+      <!-- Card 2 -->
+      <div class="ring-card reveal" style="background-image: url(/img/pexels-kylevermeulen-34710867.jpg);">
+        <div class="ring-card__overlay" style="background-image: url(/img/Daniela-1024x682-removebg-preview.png);"></div>
+        <div class="ring-card__label"><span class="ring-card__name">Daniela</span></div>
+        
+      </div>
+      <!-- Card 3 -->
+      <div class="ring-card reveal" style="background-image: url(/img/pexels-raulling-34741088.jpg);">
+        <div class="ring-card__overlay" style="background-image: url(/img/Asia-1024x683-removebg-preview.png);"></div>
+        <div class="ring-card__label"><span class="ring-card__name">Asia</span></div>
+        
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       REALIZZIAMO IL GIOIELLO CHE SOGNI
+  ═══════════════════════════════════════ -->
+  <section class="craft" id="servizi">
+    <div class="craft__text">
+      <span class="craft__eyebrow reveal">Su misura · Fatto a mano</span>
+      <h2 class="craft__title reveal">Realizziamo il<br>gioiello che sogni</h2>
+      <p class="craft__body reveal">
+        Ogni giorno lavoriamo per realizzare anelli<br>
+        artigianali unici secondo le esigenze dei nostri clienti.
+      </p>
+      <p class="craft__note reveal">
+        Contattaci per scoprire come possiamo creare l'anello perfetto per te
+      </p>
+      <div class="reveal">
+        <a href="#contatti" class="btn-gold">Contattaci</a>
+      </div>
+    </div>
+    <!-- Immagine artigiano: aggiungere style="background-image: url('images/artigiano.jpg');" -->
+    <div class="craft__image reveal" style="background-image: url(/img/gioielleria-artigianale-officine-orafe-torino.jpg);"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       LABORATORI FEIN
+  ═══════════════════════════════════════ -->
+  <section class="lab" id="about">
+    <div class="lab__inner">
+
+      <h2 class="lab__title reveal">Laboratori Fein</h2>
+
+      <p class="lab__body reveal">
+        I nostri anelli nascono dal silenzio del laboratorio, dal tempo che mettiamo nella
+        lavorazione a mano di ogni pezzo, perché siamo convinti che <strong>la bellezza vera
+        parta dalla dedizione e dalla cura</strong> che mettiamo in ogni parte della loro realizzazione.
+      </p>
+      <p class="lab__body reveal">
+        Ognuno di loro racchiude una storia: un gesto, una promessa, un momento significativo.
+        Sono storie che si scrivono da sole, forgiate nei materiali preziosi che selezioniamo
+        per rappresentarle passo dopo passo, senza una traiettoria predefinita. Sono realizzati
+        da mani che scelgono, sbagliano, rifiniscono, ricominciano.
+      </p>
+      <p class="lab__body reveal">
+        Noi non creiamo accessori. <strong>Creiamo piccoli monumenti alla vita da portare con sé.</strong>
+      </p>
+
+      <div class="lab__divider reveal">
+        <span class="lab__divider-icon">✦</span>
+      </div>
+
+      <div class="faq reveal">
+
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span class="faq__question">Come sono realizzati gli anelli Fein?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__body">
+            <div class="faq__body-inner">
+              <p class="faq__answer">
+                Ogni anello è lavorato interamente a mano nel nostro laboratorio di Torino.
+                Utilizziamo tecniche orafe tradizionali, dalla fusione alla rifinitura,
+                selezionando materiali preziosi con cura artigianale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span class="faq__question">Sono tutti pezzi unici?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__body">
+            <div class="faq__body-inner">
+              <p class="faq__answer">
+                Sì. Ogni anello che lascia il nostro laboratorio è un esemplare unico,
+                realizzato singolarmente. Non produciamo serie né repliche: ogni pezzo
+                porta con sé l'impronta irripetibile delle mani che lo hanno creato.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span class="faq__question">Realizzate anelli su commissione?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__body">
+            <div class="faq__body-inner">
+              <p class="faq__answer">
+                Assolutamente sì. Lavoriamo a stretto contatto con i clienti per dar
+                forma all'anello che immaginano: dalla scelta del metallo e delle pietre
+                fino al design finale. Contattaci per iniziare il percorso insieme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /faq -->
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       RECENSIONI
+  ═══════════════════════════════════════ -->
+  <section class="reviews" id="recensioni">
+
+    <div class="reviews__header reveal">
+      <span class="reviews__eyebrow">Le voci dei nostri clienti</span>
+      <h2 class="reviews__title">Recensioni</h2>
+    </div>
+
+    <div class="reviews__grid">
+
+      <div class="review-card reveal">
+        <span class="review-card__quote-mark">"</span>
+        <p class="review-card__text">
+          Un'esperienza indimenticabile. Ho commissionato l'anello di fidanzamento e il risultato
+          ha superato ogni aspettativa. Ogni dettaglio racconta cura e passione vera.
+        </p>
+        <div class="review-card__stars">
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span>
+        </div>
+        <div class="review-card__footer">
+          <div class="review-card__avatar">M</div>
+          <div>
+            <div class="review-card__name">Marco R.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay: 0.12s;">
+        <span class="review-card__quote-mark">"</span>
+        <p class="review-card__text">
+          Ho acquistato il modello Daniela e lo porto ogni giorno. La qualità è eccezionale,
+          lo sento diverso da qualsiasi altro anello che ho indossato. Vale ogni centesimo.
+        </p>
+        <div class="review-card__stars">
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span>
+        </div>
+        <div class="review-card__footer">
+          <div class="review-card__avatar">S</div>
+          <div>
+            <div class="review-card__name">Sara T.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay: 0.24s;">
+        <span class="review-card__quote-mark">"</span>
+        <p class="review-card__text">
+          Mi hanno guidato passo dopo passo nella creazione di un anello personalizzato.
+          Professionalità, pazienza e un risultato che è già diventato il mio oggetto più prezioso.
+        </p>
+        <div class="review-card__stars">
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span><span class="review-card__star">★</span>
+          <span class="review-card__star">★</span>
+        </div>
+        <div class="review-card__footer">
+          <div class="review-card__avatar">L</div>
+          <div>
+            <div class="review-card__name">Laura B.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       VIENI A TROVARCI
+  ═══════════════════════════════════════ -->
+  <section class="visit" id="vieni">
+
+    <div class="visit__header reveal">
+      <span class="visit__eyebrow">Torino · Su appuntamento</span>
+      <h2 class="visit__title">Vieni a trovarci</h2>
+    </div>
+
+    <div class="visit__body">
+
+      <div class="visit__info">
+
+        <div class="reveal">
+          <div class="visit__block-label">Dove siamo</div>
+          <p class="visit__address">
+            Via Luigi Cibrario 26<br>
+            10144 Torino, TO
+            <br>
+            <a href="https://maps.app.goo.gl/memcEbEAM18f2AXj6" target="_blank" rel="noopener">
+              ↗ Apri in Google Maps
+            </a>
+          </p>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Orari</div>
+          <div class="visit__hours-table">
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Martedì – Venerdì</span>
+              <span class="visit__hours-time">09:00 – 12:30 | 15:00 - 19:30</span>
+            </div>
+            <div class="visit__hours-row">
+              <span class="visit__hours-day">Sabato</span>
+              <span class="visit__hours-time">09:30 – 12:30 | 15:30 - 19:00</span>
+            </div>
+            <div class="visit__hours-row visit__hours-row--closed">
+              <span class="visit__hours-day">Domenica e Lunedì</span>
+              <span class="visit__hours-time">Chiuso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="visit__block-label">Nota</div>
+          <p class="visit__address" style="font-size: clamp(0.88rem, 1.4vw, 1rem); color: var(--gray-mid);">
+            Per le consulenze personalizzate ti consigliamo di fissare un appuntamento
+            contattandoci in anticipo.
+          </p>
+        </div>
+
+      </div>
+
+      <!--
+        ISTRUZIONI MAPPA: vai su Google Maps → cerca il tuo indirizzo →
+        Condividi → Incorpora mappa → copia il valore src e sostituiscilo qui sotto.
+      -->
+      <div class="visit__map-wrap reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3518813233627!2d7.661798676082745!3d45.078657071070225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d9c8ca62af7%3A0xc6b7d1a80fcb262d!2sFein%20le%20Officine%20Orafe!5e0!3m2!1sit!2sit!4v1774539630311!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="contatti">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="footer__logo-script">Fein</span>
+          <span class="footer__logo-subtitle">Officine orafe</span>
+        </a>
+        <div class="footer__brand-rule"></div>
+        <p class="footer__tagline">
+          Gioielli artigianali unici,<br>
+          forgiati a mano a Torino.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/fein.leofficineorafe/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><img src="/img/icons/icons8-instagram-50.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=100057106854939" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener"><img src="/img/icons/icons8-facebook-50.png"></a>
+          <a href="https://www.tiktok.com/@francescofein65" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener"><img src="/img/icons/icons8-tiktok-50.png"></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Navigazione</p>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#prodotti">I nostri anelli</a></li>
+          <li><a href="#servizi">Su commissione</a></li>
+          <li><a href="#about">Laboratori Fein</a></li>
+          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#vieni">Vieni a trovarci</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Contatti</p>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Indirizzo</span>
+          <span class="footer__contact-value">
+            Via Luigi Cibrario, 26<br>
+            10144 Torino, TO
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Telefono</span>
+          <a href="tel:+390114375276" class="footer__contact-value">011 437 5276 </a>
+          <a href="tel:+393755141969" class="footer__contact-value">375 514 1969 </a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:feinleofficineorafe@gmail.com" class="footer__contact-value">feinleofficineorafe@gmail.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Orari</span>
+          <span class="footer__contact-value">
+            Mar – Ven: 09:00 – 12:30 | 15:00 – 19:30<br>
+            Sab: 9:30 – 12:30 | 15:30 – 19:00 <br>
+            Dom – Lun: Chiuso
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        © <span id="year"></span> Fein Officine Orafe · Torino · P.IVA 11156180017
+      </span>
+      <nav class="footer__legal">
+        <a href="https://icons8.it/">Icone realizzate da Icons8</a>
+      </nav>
+    </div>
+
+  </footer>
+
+
+  <!-- Script -->
+  <script src="/script.js"></script>
+
+</body>
+</html>

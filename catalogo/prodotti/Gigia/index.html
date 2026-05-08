@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fein — Anello Gigia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar navbar--solid" id="navbar">
+
+    <a href="/index.html" class="navbar__logo">
+      <span class="navbar__logo-script">Fein</span>
+      <span class="navbar__logo-subtitle">Officine orafe</span>
+    </a>
+
+    <ul class="navbar__links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/catalogo/index.html">Prodotti</a></li>
+      <li><a href="/laboratorio/index.html">Il laboratorio</a></li>
+      <li><a href="/su commissione/index.html">Su commissione</a></li>
+    </ul>
+
+    <a href="/contatti/index.html" class="btn-gold navbar__cta">Contattaci</a>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile-menu" id="mobileMenu">
+    <a href="/index.html">Home</a>
+    <a href="/catalogo/index.html">Prodotti</a>
+    <a href="/laboratorio/index.html">Il laboratorio</a>
+    <a href="/su commissione/index.html">Su commissione</a>
+    <a href="/contatti/index.html" class="btn-gold" style="text-align:center; margin-top:.5rem;">Contattaci</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       BREADCRUMB
+  ═══════════════════════════════════════ -->
+  <div class="breadcrumb">
+    <div class="breadcrumb__inner">
+      <a href="/index.html" class="breadcrumb__link">Home</a>
+      <span class="breadcrumb__sep" aria-hidden="true">·</span>
+      <a href="/catalogo/index.html" class="breadcrumb__link">Catalogo</a>
+      <span class="breadcrumb__sep" aria-hidden="true">·</span>
+      <!-- Aggiorna con il nome del prodotto -->
+      <span class="breadcrumb__current">Gigia</span>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       SCHEDA PRODOTTO
+  ═══════════════════════════════════════ -->
+  <section class="product">
+    <div class="product__inner">
+
+      <!-- Colonna immagine -->
+      <div class="product__visual">
+
+        <!--
+          Sostituisci il colore di fallback con:
+          style="background-image: url('images/anello-gigia.jpg');"
+        -->
+        <div class="product__img" role="img" aria-label="Foto del gioiello Gigia"></div>
+
+        <!-- Badge categoria sovrapposto -->
+        <span class="product__badge">
+          <!-- Inserisci categoria: Anello / Collana / Braccialetto… -->
+          Anello
+        </span>
+
+      </div>
+
+      <!-- Colonna info -->
+      <div class="product__info">
+
+        <!-- Nome -->
+        <h1 class="product__name">
+          <!-- Inserisci nome pezzo -->
+          Gigia
+        </h1>
+
+        <!-- Linea decorativa -->
+        <div class="product__rule"></div>
+
+        <!-- Materiale -->
+        <div class="product__meta">
+          <div class="product__meta-item">
+            <span class="product__meta-label">Materiale</span>
+            <!-- Inserisci materiale: Oro giallo 18kt / Argento 925 / ecc. -->
+            <span class="product__meta-value">Oro bianco 18kt · Smeraldi · Diamanti</span>
+          </div>
+          <div class="product__meta-item">
+            <span class="product__meta-label">Lavorazione</span>
+            <span class="product__meta-value">Artigianale · Pezzo unico</span>
+          </div>
+        </div>
+
+        <!-- Descrizione -->
+        <div class="product__desc">
+          <!--
+            Inserisci qui la descrizione del pezzo.
+            Puoi usare più paragrafi.
+          -->
+          <p>
+            Gigia nasce da uno studio sulle geometrie irregolari del cristallo.
+            La doppia pietra — uno smeraldo e un rubino cabochon — è tenuta
+            da un intreccio di archetti in oro bianco che ricordano le nervature
+            di una foglia.
+          </p>
+          <p>
+            Un gioiello pensato per chi non vuole passare inosservato,
+            ma sa farlo con grazia.
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="product__cta-group">
+          <a href="index.html#contatti" class="btn-gold product__cta-primary">
+            Richiedi informazioni
+          </a>
+          <a href="index.html#commissione" class="product__cta-secondary">
+            Vuoi qualcosa di simile? →
+          </a>
+        </div>
+
+        <!-- Nota artigianale -->
+        <p class="product__note">
+          Ogni pezzo è unico e irripetibile. Le foto sono del gioiello originale.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PRODOTTI CORRELATI
+  ═══════════════════════════════════════ -->
+  <section class="related">
+    <div class="related__inner">
+
+      <div class="related__header reveal">
+        <h2 class="related__title">Altri anelli</h2>
+        <a href="catalogo.html" class="related__link">
+          Vedi tutti gli anelli →
+        </a>
+      </div>
+
+      <div class="related__grid">
+
+        <!--
+          Inserisci qui 3 prodotti della stessa categoria.
+          Struttura identica alle card del catalogo.
+        -->
+
+        <article class="product-card reveal">
+          <!-- <div class="product-card__img" style="background-image: url('images/anello-floriana.jpg');"></div> -->
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name">Floriana</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link" aria-label="Scopri Floriana"></a>
+        </article>
+
+        <article class="product-card reveal" style="transition-delay: 0.12s;">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name">Daniela</h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link" aria-label="Scopri Daniela"></a>
+        </article>
+
+        <article class="product-card reveal" style="transition-delay: 0.24s;">
+          <div class="product-card__img"></div>
+          <div class="product-card__info">
+            <h2 class="product-card__name"><!-- Nome anello --></h2>
+            <span class="product-card__cat">Anello</span>
+          </div>
+          <a href="prodotto.html" class="product-card__link"></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="contatti">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="footer__logo-script">Fein</span>
+          <span class="footer__logo-subtitle">Officine orafe</span>
+        </a>
+        <div class="footer__brand-rule"></div>
+        <p class="footer__tagline">
+          Gioielli artigianali unici,<br>
+          forgiati a mano a Torino.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/fein.leofficineorafe/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><img src="/img/icons/icons8-instagram-50.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=100057106854939" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener"><img src="/img/icons/icons8-facebook-50.png"></a>
+          <a href="https://www.tiktok.com/@francescofein65" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener"><img src="/img/icons/icons8-tiktok-50.png"></a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Navigazione</p>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#prodotti">I nostri anelli</a></li>
+          <li><a href="#servizi">Su commissione</a></li>
+          <li><a href="#about">Laboratori Fein</a></li>
+          <li><a href="#recensioni">Recensioni</a></li>
+          <li><a href="#vieni">Vieni a trovarci</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Contatti</p>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Indirizzo</span>
+          <span class="footer__contact-value">
+            Via Luigi Cibrario, 26<br>
+            10144 Torino, TO
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Telefono</span>
+          <a href="tel:+390114375276" class="footer__contact-value">011 437 5276 </a>
+          <a href="tel:+393755141969" class="footer__contact-value">375 514 1969 </a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:feinleofficineorafe@gmail.com" class="footer__contact-value">feinleofficineorafe@gmail.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Orari</span>
+          <span class="footer__contact-value">
+            Mar – Ven: 09:00 – 12:30 | 15:00 – 19:30<br>
+            Sab: 9:30 – 12:30 | 15:30 – 19:00 <br>
+            Dom – Lun: Chiuso
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        © <span id="year"></span> Fein Officine Orafe · Torino · P.IVA 11156180017
+      </span>
+      <nav class="footer__legal">
+        <a href="https://icons8.it/">Icone realizzate da Icons8</a>
+      </nav>
+    </div>
+
+  </footer>
+
+
+  <script src="/script.js"></script>
+</body>
+</html>
