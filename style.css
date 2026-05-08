@@ -2486,7 +2486,7 @@ a.footer__contact-value:hover {
   z-index: 3;
   width: 100%;
   margin: 0 auto;
-  padding: calc(var(--nav-h) + 4rem) clamp(1.5rem, 6vw, 5rem) 5rem;
+  padding: 0 clamp(1.5rem, 6vw, 5rem) 5rem;
 }
  
 .comm-hero__content {
@@ -3450,7 +3450,7 @@ a.footer__contact-value:hover {
   z-index: 3;
   width: 100%;
   margin: 0 auto;
-  padding: calc(var(--nav-h) + 2rem) clamp(1.5rem, 6vw, 5rem) 0;
+  padding: 0 clamp(1.5rem, 6vw, 5rem) 5rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -3497,53 +3497,18 @@ a.footer__contact-value:hover {
   font-style: italic;
   color: var(--gold);
 }
- 
-/* Dati in basso */
-.lab-hero__data {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  animation: fadeUp 1s 0.45s cubic-bezier(0.22,1,0.36,1) both;
-  flex-wrap: wrap;
-}
- 
-.lab-hero__data-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding: 0 clamp(1.5rem, 4vw, 3.5rem);
-}
- 
-.lab-hero__data-item:first-child {
-  padding-left: 0;
-}
- 
-.lab-hero__data-number {
-  font-family: var(--font-serif);
-  font-weight: 300;
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  color: var(--gold);
-  line-height: 1;
-}
- 
-.lab-hero__data-label {
+
+.lab-hero__lead {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
   font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
+  font-size: clamp(0.92rem, 1.6vw, 1.05rem);
+  line-height: 1.8;
+  color: rgba(255,255,255,0.58);
+  max-width: 840px;
+  margin-bottom: 2.8rem;
+  animation: fadeUp 1s 0.36s cubic-bezier(0.22,1,0.36,1) both;
 }
- 
-.lab-hero__data-divider {
-  width: 1px;
-  height: 36px;
-  background: rgba(255,255,255,0.1);
-  flex-shrink: 0;
-}
- 
+
 /* ──────────────────────────────────────────
    LABORATORIO — STORIA
 ────────────────────────────────────────── */
